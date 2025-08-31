@@ -1,0 +1,58 @@
+.news_topics_section{
+    background-color: brown;
+    padding: 40px 0;
+    border: solid 1px white;
+}
+
+.news_section{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid white;
+    padding: 15px 0;
+    background-color: blueviolet;
+}
+
+.news_text{
+    text-align: start;
+    background-color: aqua;
+    border: solid 1px black;
+    line-height: 1.6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.news_image_container{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+}
+
+
+.news_image_box{
+    flex: 1 1 50%;
+    border: solid 1px red;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    min-width: 200px; 
+    /* aspect-ratio: 16 / 9;  */
+}
+
+
+.photonews{
+    width: 100%; /* βάζω το 100% του πατέρα που είναι το topics_box που είναι το 50% */
+    height: auto;  /* γεμίζει όλο το box */
+    display: block;
+    object-fit: cover; /* crop χωρίς παραμόρφωση */
+}
+
+.news_text_box{
+    flex: 1 1 50%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* κάθετη στοίχιση */
+    gap: 10px;
+    padding: 12px;
+}

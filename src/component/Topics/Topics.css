@@ -1,0 +1,76 @@
+.topics_section{
+    /* background-color: rgb(199, 117, 117); */
+    padding: 40px 0;
+}
+
+.topics{
+    width: 80%;
+    /* background-color: rgb(243, 195, 92); */
+    margin:0 auto; /* παει το αντικείμενο στο κέντρο της σελίδας */
+}
+
+.text{
+    
+    text-align: center;        /* κεντράρει το κείμενο */
+    margin: 0 auto 30px auto;  /* κεντράρει το ίδιο το κουτί + από κάτω 30px */
+    padding: 5px 0px;
+    line-height: 1.6;
+    /* font-size: 20px; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 600px;          /* σε desktop: δεν απλώνεται περισσότερο από 600px */
+
+}
+
+.text h2{
+    font-size: 30px;
+}
+
+.image_container{  /* δεν το βάζω στο row γιατι έχω και δεύτερο class row απο πάνω */
+    /*Όσο μικραίνει το παράθυρο οι εικόνες πηγαίνουν απο κάτω */
+    display: flex;
+    flex-wrap: wrap; /* αν δεν χωράει πάει απο κάτω.*/
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;  /* προαιρετικό κενό ανάμεσα */
+}
+
+.image_box{
+    
+    flex: 1 1 22%;   /* κάθε κουτί ~22% (για 4 σε σειρά) */  
+                    /* flex-grow: 1;     το πόσο μπορεί να μεγαλώσει */
+                    /*flex-shrink: 1;   το πόσο μπορεί να μικρύνει */ 
+                    /*flex-basis: 22%;  το "αρχικό πλάτος" που ζητάει */
+
+    min-width: 200px; 
+    position: relative;
+  
+    line-height: 0; /* κόβει το extra κενό */
+    overflow: hidden;     /* κόβει ό,τι περισσεύει από την εικόνα */
+}
+
+.photo{
+    width: 100%; /* βάζω το 100% του πατέρα που είναι το topics_box που είναι το 30% */
+    height: 100%;  /* γεμίζει όλο το box */
+    display: block;
+    object-fit: cover; /* crop χωρίς παραμόρφωση */
+  
+}
+
+.image_box:hover{
+   cursor: pointer;
+  border: 3px solid transparent;  /* ακόμα transparent, αλλά... */
+  background-image:
+    linear-gradient(#0000, #0000),                /* εσωτερικό διάφανο */
+    linear-gradient(90deg, red, rgb(3, 3, 3), red, white);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-size: 100% 100%, 300% 100%;
+  animation: border-move 4s linear infinite;
+
+}
+
+
+
+@keyframes border-move{
+  to { background-position: 0 0, 300% 0; }      /* “τρέχει” γύρω γύρω */
+}

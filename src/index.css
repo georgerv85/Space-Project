@@ -1,0 +1,60 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.container{
+    padding: 1% 5%;
+}
+
+.menu-icon{
+    width: 40px;
+    cursor: pointer;
+    display: none; /* αρχικά δεν εμφανίζεται */
+}
+
+@media (max-width:768px){
+    .menu-icon{
+        display: block;
+    }
+    
+    nav ul li{
+        display: block !important; /* το ένα κάτω απ το άλλο */
+        margin: 5px !important;
+    }
+
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: rgba(123, 120, 119, 0.548);
+        width: 150px;
+        height: 100%;
+
+        padding-top: 100px;
+
+        z-index: -1;  /* σε σχέση με το index.css z-index: 10 */
+
+        padding-left: 40px;
+        transition: 0.5s;
+    }
+
+    .text {
+        max-width: 100%;       /* γεμίζει όλο το πλάτος σε κινητό */
+        padding: 10px;         /* λίγο extra κενό δεξιά-αριστερά */
+    }
+
+    
+}
+
+@media (max-width:1300px){
+    .search-bar input{
+         
+        display: none;
+    }
+
+    .search-bar button{
+        padding: 8px;
+    }
+}
+
+.hide-menu{
+    right: -150px; /* γιατί το width είναι 150px */
+}

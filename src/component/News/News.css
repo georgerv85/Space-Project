@@ -1,0 +1,7 @@
+.news_image{
+    background: linear-gradient(#130a4d14, #08003ab3), url(../../assets/images/New.png) center/cover no-repeat;
+    min-height: 100vh;
+    align-items: center; /* στοίχιση κάθετη στο κέντρο */
+    display: flex;
+    justify-content: flex-start;
+}

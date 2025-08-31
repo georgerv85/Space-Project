@@ -2,6 +2,5 @@
   <h2 align="center">Space Project using React.Js</h2>
 </span>
 <p align="center">
-  <img src="./assets/src/images/nasa.png" alt="Space">
-  ![NASA Logo](./src/assets/images/nasa.png)
+ https://github.com/georgerv85/Space-Project/blob/main/src/assets/images/nasa.png?raw=true
 </p>

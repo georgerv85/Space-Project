@@ -25,7 +25,7 @@ function NewsTopics() {
                 <div className='news_text_box'>
 
                     <h1>Epic Research Can Help Mars Missions
-                        The parachute of the Enhancing Parachutes by Instrumenting the Canopy test experiment deploys following an air launch from an Alta X drone on June 4, 2025, at NASA’s Armstrong Flight Research Center in Edwards, California.f
+                        The parachute of the Enhancing Parachutes by Instrumenting the Canopy test experiment deploys following an air launch from an Alta X drone on June 4, 2025, at NASA’s Armstrong Flight Research Center in Edwards, California.
                     </h1>
 
                 </div>

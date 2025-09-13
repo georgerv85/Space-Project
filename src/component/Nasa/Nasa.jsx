@@ -3,7 +3,7 @@ import './Nasa.css'
 
 function Nasa() {
   return (
-    <div>
+    <div className='live_image'>
       
     </div>
   )

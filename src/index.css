@@ -41,6 +41,10 @@
         padding: 10px;         /* λίγο extra κενό δεξιά-αριστερά */
     }
 
+    .news_image_container{
+        flex-direction: column;
+    }
+
     
 }
 

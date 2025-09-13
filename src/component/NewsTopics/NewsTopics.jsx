@@ -28,8 +28,7 @@ function NewsTopics() {
 
                 <div className='news_text_box'>
 
-                    <h1>Epic Research Can Help Mars Missions
-                        The parachute of the Enhancing Parachutes by Instrumenting the Canopy test experiment deploys following an air launch from an Alta X drone on June 4, 2025, at NASA’s Armstrong Flight Research Center in Edwards, California.
+                    <h1>A sample collected by NASA’s Perseverance Mars rover from an ancient dry riverbed in Jezero Crater could preserve evidence of ancient microbial life. Taken from a rock named “Cheyava Falls” last year, the sample, called “Sapphire Canyon,” contains potential biosignatures, according to a paper published Wednesday in the journal Nature.
                     </h1>
 
                 </div>

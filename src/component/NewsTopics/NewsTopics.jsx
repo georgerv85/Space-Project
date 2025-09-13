@@ -19,6 +19,10 @@ function NewsTopics() {
                 <div className='news_image_box'>
 
                     <img src={News1} alt="" className='photonews'/>
+
+                    <div className="overlay">
+                        Space Station
+                    </div>
                     
                 </div>
 

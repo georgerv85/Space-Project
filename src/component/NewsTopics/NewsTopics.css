@@ -46,7 +46,29 @@
     height: 100%;  /* γεμίζει όλο το box */
     display: block;
     object-fit: cover; /* crop χωρίς παραμόρφωση */
-    border-radius: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.photonews:hover {
+  transform: scale(1.02);       /* μικρό zoom στο hover */
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;                     /* γεμίζει όλη την οθόνη */
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
 }
 
 .news_text_box{
@@ -59,11 +81,3 @@
     padding: 12px;
     /* background-color: #cec5c5; */
 }
-
-/* .overlay{
-  position: absolute;
-  left: 0; right: 0; bottom: 0;     
-  padding: 12px;
-  color: #fff;
-  background: linear-gradient(transparent, rgba(0,0,0,0.6));
-} */

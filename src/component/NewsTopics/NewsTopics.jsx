@@ -1,8 +1,13 @@
 import React from 'react'
 import './NewsTopics.css'
 import News1 from '../../assets/images/News1.png'
+import { useState } from "react";
+
+ 
 
 function NewsTopics() {
+    const [isOpen, setIsOpen] = useState(false);
+    
   return (
     <section className='news_topics_section'>
 
@@ -18,12 +23,10 @@ function NewsTopics() {
 
                 <div className='news_image_box'>
 
-                    <img src={News1} alt="" className='photonews'/>
+                    {/* <img src={News1} alt="" className='photonews'/> */}
 
-                    {/* <div className="overlay">
-                        Space Station
-                    </div> */}
-                    
+                    <img src={News1} alt="Epic Research" className="photonews" onClick={() => setIsOpen(true)} />
+  
                 </div>
 
                 <div className='news_text_box'>
@@ -39,6 +42,12 @@ function NewsTopics() {
 
 
         </div>
+
+            {isOpen && (
+                <div className="lightbox" onClick={() => setIsOpen(false)}>
+                    <img src={News1} alt="zoomed" className="lightbox-img" />
+                </div>
+            ) }
 
     </section>
   )

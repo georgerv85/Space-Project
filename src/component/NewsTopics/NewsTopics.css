@@ -43,9 +43,10 @@
 
 .photonews{
     width: 100%; /* βάζω το 100% του πατέρα που είναι το topics_box που είναι το 50% */
-    height: auto;  /* γεμίζει όλο το box */
+    height: 100%;  /* γεμίζει όλο το box */
     display: block;
     object-fit: cover; /* crop χωρίς παραμόρφωση */
+    border-radius: 2px;
 }
 
 .news_text_box{
@@ -56,13 +57,13 @@
     justify-content: center;  /* κάθετη στοίχιση */
     gap: 10px;
     padding: 12px;
-    background-color: #cec5c5;
+    /* background-color: #cec5c5; */
 }
 
-.overlay{
+/* .overlay{
   position: absolute;
-  left: 0; right: 0; bottom: 0;      /* “κολλάει” στη βάση του parent */
+  left: 0; right: 0; bottom: 0;     
   padding: 12px;
   color: #fff;
   background: linear-gradient(transparent, rgba(0,0,0,0.6));
-}
+} */

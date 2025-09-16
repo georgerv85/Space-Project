@@ -20,9 +20,9 @@ function NewsTopics() {
 
                     <img src={News1} alt="" className='photonews'/>
 
-                    <div className="overlay">
+                    {/* <div className="overlay">
                         Space Station
-                    </div>
+                    </div> */}
                     
                 </div>
 

@@ -7,6 +7,7 @@ import Nasa from "./component/Nasa/Nasa"
 import Footer from "./component/Footer/Footer"
 import NewsTopics from "./component/NewsTopics/NewsTopics"
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom"
+import TopicsVideo from "./component/TopicsVideo/TopicsVideo"
 
 
 
@@ -28,6 +29,7 @@ function App() {
                   <>
                     <Hero />
                     <Topics />
+                    <TopicsVideo />
                   </>
 
               } />

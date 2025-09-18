@@ -50,6 +50,10 @@ p{
         flex-direction: column;
     }
 
+    .videoSection iframe{
+        width: 100%;
+    }
+
     
 }
 

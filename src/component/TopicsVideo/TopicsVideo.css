@@ -1,0 +1,53 @@
+.topicsVideo{
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+}
+
+.topicsVideoSection{
+    width: 80%;
+    padding: 15px 0;
+    margin: 0 auto;
+    /* background-color: brown; */
+}
+
+.text_and_video_container{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap:20px ;
+    /* background-color: aquamarine; */
+}
+
+.textSection{
+    flex: 1 1 30%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* κάθετη στοίχιση */
+    gap: 10px;
+    padding: 12px; 
+    /* background-color: blue; */
+}
+
+.videoSection{
+    flex: 1 1 70%;
+    /* border: solid 1px red; */
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    min-width: 200px;
+    background-color: antiquewhite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* iframe γεμίζει όλο το box */
+.videoSection iframe {
+  width: 85%;   /* καλύπτει 80% του πλάτους */
+  aspect-ratio: 16/9; /* κρατάει αναλογία βίντεο */
+  border: 0;
+}

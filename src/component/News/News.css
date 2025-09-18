@@ -5,3 +5,37 @@
     display: flex;
     justify-content: flex-start;
 }
+
+.hero-text{
+    
+    text-align: left;
+    max-width: 600px;  /* για να μην απλώνεται σε όλη την οθόνη */
+     
+}
+
+.hero-text h1{
+    margin-bottom: 15px;
+    color: white;
+    font-size: 60px;
+    
+}
+
+.hero-text p{
+    color: white;
+    line-height: 1.6; /* πιο ευανάγνωστο */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+   
+}
+
+.hero-button{
+    margin-top: 15px;
+    background-color: rgba(245, 53, 53, 0.822);
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    display: inline-block; /* καταλαμβάνει όσο χώρο χρειάζεται και υπακούει στις διαστάσεις */
+    font-size: 16px;
+    font-weight: 600;
+    /* font-size: 1.2rem;  */
+}

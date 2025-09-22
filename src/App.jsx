@@ -8,6 +8,7 @@ import Footer from "./component/Footer/Footer"
 import NewsTopics from "./component/NewsTopics/NewsTopics"
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom"
 import TopicsVideo from "./component/TopicsVideo/TopicsVideo"
+import TopicsFeatured from "./component/TopicsFeatured/TopicsFeatured"
 
 
 
@@ -30,6 +31,7 @@ function App() {
                     <Hero />
                     <Topics />
                     <TopicsVideo />
+                    <TopicsFeatured />
                   </>
 
               } />

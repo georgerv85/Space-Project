@@ -1,7 +1,8 @@
 .topicsVideo{
-    background-color: black;
+    /* background-color: black; */
     color: white;
     padding: 40px 0;
+    background: linear-gradient(#130a4d14, #08003ab3), url(../../assets/images/topicsVideo.png) center/cover no-repeat;
 }
 
 .topicsVideoSection{
@@ -33,16 +34,18 @@
 
 .videoSection{
     flex: 1 1 70%;
-    /* border: solid 1px red; */
     line-height: 0;
     overflow: hidden;
     position: relative;
     min-width: 200px;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 0;
+    margin: 0;
 }
 
 /* iframe γεμίζει όλο το box */
@@ -50,4 +53,5 @@
   width: 85%;   /* καλύπτει 80% του πλάτους */
   aspect-ratio: 16/9; /* κρατάει αναλογία βίντεο */
   border: 0;
+  display: block;
 }

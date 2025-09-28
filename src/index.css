@@ -55,6 +55,10 @@ p{
         
     }
 
+    .TopicsMediaContainer{
+        flex-direction: column;
+    }
+
     
 }
 

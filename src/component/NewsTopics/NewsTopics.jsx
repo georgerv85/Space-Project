@@ -8,6 +8,12 @@ import { useState } from "react";
 
 function NewsTopics() {
     const [isOpen, setIsOpen] = useState(false);
+    const [activeImage, setActiveImage] = useState(null);
+
+    const openImage = (src) => {
+    setActiveImage(src);  // αποθηκεύει ποια εικόνα κλικάρεις
+    setIsOpen(true);
+  };
     
   return (
     <section className='news_topics_section'>
@@ -23,7 +29,7 @@ function NewsTopics() {
             <div className='news_image_container'>
 
                 <div className='news_image_box'>
-                    <img src={News1} alt="Epic Research" className="photonews" onClick={() => setIsOpen(true)} />
+                    <img src={News1} alt="Epic Research" className="photonews" onClick={() => openImage(News1)} />
                 </div>
 
                 <div className='news_text_box'>
@@ -37,7 +43,7 @@ function NewsTopics() {
                 </div>
 
                 <div className='news_image_box'>
-                    <img src={News2} alt="Epic Research" className="photonews" onClick={() => setIsOpen(true)} />
+                    <img src={News2} alt="Epic Research" className="photonews" onClick={() => openImage(News2)} />
                 </div>
 
             </div>
@@ -49,9 +55,11 @@ function NewsTopics() {
 
             {isOpen && (
                 <div className="lightbox" onClick={() => setIsOpen(false)}>
-                    <img src={News1} alt="zoomed" className="lightbox-img" />
+                    <img src={activeImage} alt="zoomed" className="lightbox-img" />
                 </div>
             ) }
+
+            
 
     </section>
   )

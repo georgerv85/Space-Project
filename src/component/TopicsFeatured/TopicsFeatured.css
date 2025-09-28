@@ -2,3 +2,87 @@
     padding: 40px 0;
     background-color: brown;
 }
+
+.TopicsSection{
+    width: 80%;
+    padding: 15px 0;
+    margin: 0 auto;
+    background-color: burlywood;
+    
+}
+
+.TopicsTitle{
+    text-align: center;
+    line-height: 1.6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 15px;
+    background-color: cadetblue;
+}
+
+
+
+.TopicsMediaContainer{
+    /* background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap; */
+
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;            /* 👈 κενό ανάμεσα στις σειρές */
+    padding: 10px 0;
+}
+
+.TopicsBoxText{
+    /* background-color: aqua;
+    text-align: center;
+    flex: 1 1 80%;
+    margin-bottom: 10px;
+    min-width: 150px;
+    
+    display: flex;
+    align-items: center; */
+
+    background-color: aqua;
+    flex: 1 1 70%;
+    min-width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* κάθετη στοίχιση */
+}
+
+.TopicsBoxImage{
+    /* background-color: bisque;
+    flex: 1 1 20%;
+    line-height: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+    min-width: 150px;
+    position: relative;
+
+    display: flex;
+    justify-content: center; */
+
+    background-color: bisque;
+    flex: 1 1 30%;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    min-width: 150px;
+    padding: 5px 0;
+
+    display: flex;
+    justify-content: center; 
+    
+}
+
+.image1{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}

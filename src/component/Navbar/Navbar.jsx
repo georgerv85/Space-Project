@@ -31,7 +31,7 @@ function Navbar() {
         </div>
 
   
-        <Link to="/"><img src={nasa} alt="nasa" className='logo' /></Link>
+        <Link to="/Space-Project/"><img src={nasa} alt="nasa" className='logo' /></Link>
 
         <ul className={x ? " " : "hide-menu"}>
             <li><Link to="/News">News & Events</Link></li>

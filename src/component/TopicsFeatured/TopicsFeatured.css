@@ -1,13 +1,13 @@
 .TopicsFeatured{
     padding: 40px 0;
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 .TopicsSection{
     width: 80%;
     padding: 15px 0;
     margin: 0 auto;
-    background-color: burlywood;
+    /* background-color: burlywood; */
     
 }
 
@@ -16,7 +16,7 @@
     line-height: 1.6;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-bottom: 15px;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 }
 
 
@@ -28,9 +28,9 @@
     align-items: stretch;
     flex-wrap: wrap; */
 
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 10px;            /* 👈 κενό ανάμεσα στις σειρές */
@@ -47,13 +47,14 @@
     display: flex;
     align-items: center; */
 
-    background-color: aqua;
+    /* background-color: aqua; */
     flex: 1 1 70%;
     min-width: 200px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;  /* κάθετη στοίχιση */
+    padding-left: 5px;
 }
 
 .TopicsBoxImage{
@@ -68,7 +69,7 @@
     display: flex;
     justify-content: center; */
 
-    background-color: bisque;
+    /* background-color: bisque; */
     flex: 1 1 30%;
     line-height: 0;
     overflow: hidden;

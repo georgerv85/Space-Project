@@ -3,6 +3,7 @@ import './TopicsFeatured.css'
 import image1 from '../../assets/images/image1.png'
 import image2 from '../../assets/images/image2.png'
 import image3 from '../../assets/images/image3.png'
+import image4 from '../../assets/images/image4.png'
 
 function TopicsFeatured() {
   return (
@@ -10,7 +11,7 @@ function TopicsFeatured() {
       <div className='TopicsSection'>
 
         <div className='TopicsTitle'>
-          Recently Published
+          <h1>Recently Published</h1>
         </div>
 
         <div className='TopicsMediaContainer'>
@@ -37,6 +38,14 @@ function TopicsFeatured() {
 
           <div className='TopicsBoxText'>
             <p>Today, Voyager 1 is the most distant spacecraft from Earth, more than 14 billion miles away and continuing on its journey out of our solar system. Forty years ago, it made its closest approach to Saturn. Although it was not the first to explore the giant ringed planet, as the Pioneer 11 spacecraft completed the first flyby in 1979, Voyager carried sophisticated instruments to conduct more in-depth investigations. </p>
+          </div>
+
+          <div className='TopicsBoxImage'>
+            <img src={image4} alt="image1" className='image1' />
+          </div>
+
+          <div className='TopicsBoxText'>
+            <p>NASA has a long record of monitoring Earth’s sea surface height, information critical not only for tracking how the ocean changes over time but also for hurricane forecasting. These extreme storms can cost the United States billions of dollars each year, wreaking havoc on lives and property. Meteorologists have worked to improve forecasts for a hurricane’s path, or track, as well as its intensity, measured as surface wind speed. Sentinel-6B, the U.S.-European satellite launching later this year, will help in that effort. </p>
           </div>
 
         </div>
